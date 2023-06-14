@@ -1,0 +1,710 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=ZCOOL KuaiLe">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Abril Fatface">
+    <link rel="stylesheet" href="ason.css">
+    <style>
+        .navbar-dark .navbar-nav .nav-link.active {
+          background-color: rgb(77, 76, 77);
+          color: white;
+        }
+    
+        .ratio-container {
+          position: relative;
+          width: 100%;
+          padding-top: 56.25%;
+          /* 16:9 ratio */
+        }
+    
+    
+        .ratio-container img {
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+        }
+    
+        .footer {
+          background-color: black;
+          color: aliceblue;
+          padding: 10px;
+          text-align: center;
+          letter-spacing: 2px;
+        }
+        
+        #myVideo {
+      cursor: pointer;
+    }
+
+    body {
+      font-family: "ZCOOL KuaiLe", sans-serif;
+      font-family: "Abril Fatface", sans-serif;
+
+    }
+
+</style>
+
+        
+
+      </style>
+    
+    
+</head>    
+
+<body data-bs-spy="scroll" data-bs-target="#navbar" data-bs-offset="0">
+    <audio src="music.mp3" autoplay loop></audio>
+
+   
+  <nav class="navbar navbar-expand-lg navbar navbar-dark bg-dark fixed-top " id="navbar">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Portfolio</a>
+
+      <button class="ms-auto navbar-toggler" type="button" data-bs-toggle="collapse"
+        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+        aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse justify-content-end " id="navbarSupportedContent">
+        <div class="navbar-nav me-auto mb-2 mb-lg-0 nav-tabs">
+          <a class="nav-link active" aria-current="page" href="#champion">Home</a>
+          <a class="nav-link" href="#自我介紹">About Me</a>
+          <div class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#dropdown" id="navbarDropdown" role="button"
+              data-bs-toggle="dropdown" aria-expanded="false">
+              各類作品
+            </a>
+           
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="#01">3D Design</a>
+              <a class="dropdown-item" href="#02">Graphic Design</a>
+              <a class="dropdown-item" href="#03">Video Design</a>
+              <a class="dropdown-item" href="#04">Expertise</a>
+              <hr class="dropdown-divider">
+              <a class="dropdown-item" href="#">Something else here</a>
+            </div>
+            </li>
+            </h1>
+
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </nav>
+  
+
+<!-- 內容 -->
+    <div class="container mt-5">
+      <div class="row justify-content-md-center">
+        <div class="col-12">
+        <!-- 第一格 -->
+            <section id="champion"></section>
+            <!-- carousel slide 外層；inner 主結構 -->
+            <div id="carouselExampleSlidesOnly" class="carousel slide carousel-fade" data-bs-ride="carousel">
+                <!-- aria-current="true"給視障者用的 -->
+                <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleSlidesOnly" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleSlidesOnly" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleSlidesOnly" data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
+                    <button type="button" data-bs-target="#carouselExampleSlidesOnly" data-bs-slide-to="2"
+                    aria-label="Slide 4"></button>
+                <button type="button" data-bs-target="#carouselExampleSlidesOnly" data-bs-slide-to="3"
+                    aria-label="Slide 0"></button>
+                </div>
+           
+                <div class="carousel-inner">
+                <!-- data-bs-interval 切換速度 -->
+
+                <div class="carousel-item active" data-bs-interval="2000">
+                    <div class="ratio-container">
+                    <img src="3d/1.png" class="img-fluid ratio-16x9" alt="...">
+                    </div>
+                    <div class="carousel-caption">
+                    <h5>【3D】</h5>
+                    <p>The future world</p>
+                    </div>
+                </div>
+
+                <div class="carousel-item" data-bs-interval="2000">
+                    <div class="ratio-container">
+                    <img src="dance/1.jpg" class="img-fluid ratio-16x9" alt="...">
+                    </div>
+                    <div class="carousel-caption">
+                    <h5>【Dance】</h5>
+                    <p>22 Zenith</p>
+                    </div>
+                </div>
+                <div class="carousel-item" data-bs-interval="2000">
+                    <div class="ratio-container">
+                    <img src="WU.JPG" class="img-fluid ratio-16x9" alt="...">
+                    </div>
+                    <div class="carousel-caption">
+                    <h5>【Dance】</h5>
+                    <p>Wutang</p>
+                    </div>
+                </div>
+
+                <div class="carousel-item" data-bs-interval="2000">
+                    <div class="ratio-container">
+                    <img src="ps/3.jpg" class="img-fluid ratio-16x9" alt="...">
+                    </div>
+                    <div class="carousel-caption">
+                    <h5>【photo】</h5>
+                    <p>The future world</p>
+                    </div>
+                </div>
+
+                <div class="carousel-item" data-bs-interval="2000">
+                    <div class="ratio-container">
+                    <img src="3d/3.png" class="img-fluid ratio-16x9" alt="...">
+                    </div>
+                    <div class="carousel-caption">
+                    <h5>【3D】</h5>
+                    <p>The future world</p>
+                    </div>
+                </div>
+
+                <div class="carousel-item" data-bs-interval="2000">
+                    <div class="ratio-container">
+                    <img src="dance/4.jpg" class="img-fluid ratio-16x9" alt="...">
+                    </div>
+                    <div class="carousel-caption">
+                    <h5>【Dance】</h5>
+                    <p>The future world</p>
+                    </div>
+                </div>
+
+                <!-- data-bs-target指的是目標id，沒有指定的話沒有辦法點 -->
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleSlidesOnly"
+                    data-bs-slide="prev">
+                   
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                </div>
+            </div>
+        </a>
+
+        <!-- 第二格 -->      
+            <!-- About section -->
+            <style>
+                .image-container {
+                  position: relative;
+                  display: inline-block;
+                }
+                
+                .image-container:hover img {
+                  opacity: 0.7;
+                }
+                
+                .image-container:hover .overlay {
+                  opacity: 1;
+                }
+                </style>
+                <br>
+                <br>
+                <a href="index4.html">
+                <div class="ason">
+                <section id="自我介紹"></section>
+                 <div style="text-align: center;">
+                <div class="image-container">
+                  <img src="頭貼.jpeg" width="300" height="300" alt="大頭貼" style="border-radius: 50%;">
+                  <div class="overlay">
+                  </div>
+                </div>
+                </div>
+            </div>
+        </a>
+
+                <br>
+                <style>
+                    @keyframes float-in {
+                      0% { opacity: 0; transform: translateY(-50px); }
+                      100% { opacity: 1; transform: translateY(0); }
+                    }
+                    
+                    .float-in {
+                      animation: float-in 1s ease-out forwards;
+                    }
+                    .float-in {
+                        animation: float-in 1s ease-out forwards;
+                        text-align: center;
+                    }
+                    .float-in {
+                        animation: float-in 1s ease-out forwards;
+                        text-align: center;
+                        line-height: 30px; /* 調整行高以適應文字大小 */
+                        font-size: 16px;
+                    }
+                    </style>
+                    </head>
+                    <body>
+                    <h1 class="float-in">
+                        姓名 | 詹筑菁
+                        <br>
+                        <br>
+                        學習經歷 | 畢業於雲林科大 數媒系
+                        <br>
+                        <br>
+                        實習經歷 | 於義大利進行交流
+                        <br>
+                        <br>
+                        好young雲林街舞比賽 <b>季軍</b> /全國中等街舞大賽<b>入圍</b>/台中玻璃盃賽 <b>四強</b>
+                            <br>
+                            <br>
+                           hero for who 街舞比賽 <b>佳作</b> / 台中街舞大賽<b>入圍</b> /<b>入圍</b>
+                        </h4>
+        
+                        <br>
+                        <br>
+                    </body>
+                
+
+                <p></p>
+            </section>
+
+        <!-- 第三欄 -->
+        <section id="01"></section>
+        <div class="container mt-0">
+    <br>
+    <br>
+    <br>
+    <div class="row justify-content-md-end">
+    <div class="col-5">
+        <style>
+            .text-container {
+              letter-spacing: 2px;
+              font-size: 20px;
+            }
+            </style>
+            
+            <div class="text-container">
+              <p> <h1><b>3D Design</b></h1>
+                <br>
+                <h5>
+                    作品名稱：未來世界的葬禮
+                    <br>
+                    <br>
+                    作品理念：此作品是運用3D建模軟體Maya所建造成，圖呈現的是電子式墳墓，在未來土地稀缺的情況下，人們會用電子式的方式來悼念往者，不僅是節省土地浪費，也可以把對人們的思念及他們的過往存放在裡面。
+                </h5></p>
+            </div>
+            </div>
+
+            <div class="col-7">
+            <!-- carousel slide 外層；inner 主結構 -->
+            <div id="carouselExampleSlidesOnly" class="carousel slide carousel-fade" data-bs-ride="carousel">
+                <!-- aria-current="true"給視障者用的 -->
+                <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleSlidesOnly" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleSlidesOnly" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleSlidesOnly" data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
+                <button type="button" data-bs-target="#carouselExampleSlidesOnly" data-bs-slide-to="3"
+                    aria-label="Slide 0"></button>
+                </div>
+
+                <div class="carousel-inner">
+                <!-- data-bs-interval 切換速度 -->
+                <a href="video.html">
+                <div class="carousel-item active" data-bs-interval="1500">
+                    <div class="ratio-container">
+                    <img src="3d/3.png" class="img-fluid ratio-16x9" alt="...">
+                    </div>
+                    <div class="carousel-caption">
+                    <h5>[ 3D Design ]</h5>
+                    </div>
+                </div>
+
+                <div class="carousel-item" data-bs-interval="1500">
+                    <div class="ratio-container">
+                    <img src="3d/2.png" class="img-fluid ratio-16x9" alt="...">
+                    </div>
+                    <div class="carousel-caption">
+                    <h5>[ 3D Design ]</h5>
+                    </div>
+                </div>
+
+                <div class="carousel-item" data-bs-interval="1500">
+                    <div class="ratio-container">
+                    <img src="3d/1.png" class="img-fluid ratio-16x9" alt="...">
+                    </div>
+                    <div class="carousel-caption">
+                    <h5>[ 3D Design ]</h5>
+                    </div>
+                </div>
+
+                <div class="carousel-item" data-bs-interval="1500">
+                    <div class="ratio-container">
+                    <img src="3d/4.png" class="img-fluid ratio-16x9" alt="...">
+                    </div>
+                    <div class="carousel-caption">
+                    <h5>[ 3D Design ]</h5>
+                    </div>
+                </div>
+            </a>
+
+                </div>
+
+                <!-- data-bs-target指的是目標id，沒有指定的話沒有辦法點 -->
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleSlidesOnly"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleSlidesOnly"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+            </div>
+        </div>
+            </div>
+
+            <br>
+            <br>
+            <br>
+
+        <!-- 第四欄 -->
+        <section id="02"></section>
+        <div class="container mt-0">
+    <br>
+    <br>
+    <br>
+    <div class="row justify-content-md-end">
+    <div class="col-5">
+        <style>
+            .text-container {
+              letter-spacing: 2px;
+            }
+            </style>
+            
+            <div class="text-container">
+              <p> <h1><b>Graphic Design</b></h1>
+                <br>
+                <h5>
+                    作品介紹:
+                    <br>
+                    <br>
+                    平面設計皆是運用Adobe illustrator所繪製而成，每個設計都有不同理念，包括logo設計、商品折價卷設計、貼紙設計、icon設計等，
+                    在創作過程我也學習到了很多也期待有更多作品生成。
+                </h5></p>
+            </div>
+            </div>
+
+            <div class="col-7">
+            <!-- carousel slide 外層；inner 主結構 -->
+            <div id="carouselExampleSlidesOnly" class="carousel slide carousel-fade" data-bs-ride="carousel">
+                
+                <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleSlidesOnly" data-bs-slide-to="0"
+                    class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleSlidesOnly" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleSlidesOnly" data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
+                <button type="button" data-bs-target="#carouselExampleSlidesOnly" data-bs-slide-to="3"
+                    aria-label="Slide 0"></button>
+                </div>
+
+                <div class="carousel-inner">
+                <!-- data-bs-interval 切換速度 -->
+                <div class="carousel-item active" data-bs-interval="1500">
+                    <div class="ratio-container">
+                    <img src="logo/logo2.png" class="img-fluid ratio-16x9" alt="...">
+                    </div>
+                    <div class="carousel-caption">
+                    <h5>雲科海報設計冠軍</h5>
+                    </div>
+                </div>
+
+                <div class="carousel-item" data-bs-interval="1500">
+                    <div class="ratio-container">
+                    <img src="logo/logo1.png" class="img-fluid ratio-16x9" alt="...">
+                    </div>
+                    <div class="carousel-caption">
+                    <h5>雲科海報設計冠軍</h5>
+                    </div>
+                </div>
+
+              
+                </div>
+
+                <!-- data-bs-target指的是目標id，沒有指定的話沒有辦法點 -->
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleSlidesOnly"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleSlidesOnly"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+                </button>
+
+            </div>
+            </div>
+            </div>
+            </div>
+
+            <br>
+            <br>
+            <br>
+
+        <!-- 第五欄 -->
+            <section id="03"></section>
+            <div class="container mt-0">
+        <br>
+        <br>
+        <br>
+        <div class="row justify-content-md-end">
+        <div class="col-5">
+            <style>
+                .text-container {
+                  letter-spacing: 2px;
+                }
+                </style>
+                
+                <div class="text-container">
+                  <p> <h1><b>Video Design</b></h1>
+                    <br>
+                    <h5>
+                        作品名稱：Limbs
+                        <br>
+                        <br>
+                        作品理念：因為我本身是學舞蹈的，我覺得舞者們的肢體語言與展現非常漂亮，所以想運用鏡頭將肢體所呈現出
+                        的『生、老、病、死』所記錄下來。
+                    </h5></p>
+                </div>
+                
+       
+        </div>
+
+        <div class="col-7">
+        <!-- carousel slide 外層；inner 主結構 -->
+        <div id="carouselExampleSlidesOnly" class="carousel slide carousel-fade" data-bs-ride="carousel">
+        
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleSlidesOnly" data-bs-slide-to="0"
+            class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleSlidesOnly" data-bs-slide-to="1"
+            aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleSlidesOnly" data-bs-slide-to="2"
+            aria-label="Slide 3"></button>
+            <button type="button" data-bs-target="#carouselExampleSlidesOnly" data-bs-slide-to="3"
+            aria-label="Slide 0"></button>
+        </div>
+
+        <div class="carousel-inner">
+            <!-- data-bs-interval 切換速度 -->
+            <div class="carousel-item active" data-bs-interval="1500">
+            <div class="ratio-container">
+                <img src="ps/3.jpg" class="img-fluid ratio-16x9" alt="...">
+            </div>
+            <div class="carousel-caption">
+                <h5>[ video capture ]</h5>
+            </div>
+            </div>
+
+            <div class="carousel-item" data-bs-interval="1500">
+            <div class="ratio-container">
+                <img src="ps/2.jpg" class="img-fluid ratio-16x9" alt="...">
+            </div>
+            <div class="carousel-caption">
+                <h5>[ video capture ]</h5>
+            </div>
+            </div>
+
+            <div class="carousel-item" data-bs-interval="1500">
+            <div class="ratio-container">
+                <img src="ps/4.jpg" class="img-fluid ratio-16x9" alt="...">
+            </div>
+            <div class="carousel-caption">
+                <h5>[ video capture ]</h5>
+            </div>
+            </div>
+
+            <div class="carousel-item" data-bs-interval="1500">
+            <div class="ratio-container">
+                <img src="ps/1.jpg" class="img-fluid ratio-16x9" alt="...">
+            </div>
+            <div class="carousel-caption">
+                <h5>[ video capture ]</h5>
+            </div>
+            </div>
+        </div>
+
+        <!-- data-bs-target指的是目標id，沒有指定的話沒有辦法點 -->
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleSlidesOnly"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleSlidesOnly"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+
+        </div>
+        </div>
+        </div>
+            </div>
+
+            <br>
+            <br>
+            <br>
+
+        <!-- 第六欄 -->
+        <section id="04"></section>
+            <div class="container mt-0">
+        <br>
+        <br>
+        <br>
+        <div class="row justify-content-md-end">
+        <div class="col-5">
+            <style>
+                .text-container {
+                  letter-spacing: 2px;
+                }
+                </style>
+                
+                <div class="text-container">
+                  <p> <h1><b>Expertise</b></h1>
+                    <br>
+                    <h5>
+                舞蹈是我生命中不可或缺的一部分，它是我熱愛的源泉。每一次舞步的轉動，
+                每一次音樂的融合，都讓我感受到無比的喜悅和自由。舞蹈讓我能夠表達內心的情感，
+                展現我獨特的個性。無論是舞臺上的光芒，還是與舞友共創的時刻，舞蹈總能帶給我無盡的動力和滿足感。
+                    </h5></p>
+                </div>
+                
+       
+        </div>
+
+            <div class="col-7">
+                <!-- carousel slide 外層；inner 主結構 -->
+                <div id="carouselExampleSlidesOnly" class="carousel slide carousel-fade" data-bs-ride="carousel">
+                
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleSlidesOnly" data-bs-slide-to="0"
+                    class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleSlidesOnly" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleSlidesOnly" data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
+                    <button type="button" data-bs-target="#carouselExampleSlidesOnly" data-bs-slide-to="3"
+                    aria-label="Slide 0"></button>
+                </div>
+
+                <div class="carousel-inner">
+                        <!-- data-bs-interval 切換速度 -->
+                        <a href="dance.html">
+                <!-- data-bs-interval 切換速度 -->
+                <div class="carousel-item active" data-bs-interval="1500">
+                    <div class="ratio-container">
+                    <img src="dance/1.jpg" class="img-fluid ratio-16x9" alt="...">
+                    </div>
+                    <div class="carousel-caption">
+                    <h5>[Dance]</h5>
+                    <p></p>
+                    </div>
+                </div>
+
+                <div class="carousel-item" data-bs-interval="1500">
+                    <div class="ratio-container">
+                    <img src="dance/2.jpg" class="img-fluid ratio-16x9" alt="...">
+                    </div>
+                    <div class="carousel-caption">
+                    <h5>[Dance]</h5>
+                    <p></p>
+                    </div>
+                </div>
+
+                <div class="carousel-item" data-bs-interval="1500">
+                    <div class="ratio-container">
+                    <img src="dance/3.jpg" class="img-fluid ratio-16x9" alt="...">
+                    </div>
+                    <div class="carousel-caption">
+                    <h5>[Dance]</h5>
+                    <p></p>
+                    </div>
+                </div>
+
+                <div class="carousel-item" data-bs-interval="1500">
+                    <div class="ratio-container">
+                    <img src="dance/4.jpg" class="img-fluid ratio-16x9" alt="...">
+                    </div>
+                    <div class="carousel-caption">
+                    <h5>[Dance]</h5>
+                    <p></p>
+                    </div>
+
+                    <div class="carousel-item" data-bs-interval="1500">
+                        <div class="ratio-container">
+                        <img src="dance/5.jpg" class="img-fluid ratio-16x9" alt="...">
+                        </div>
+                        <div class="carousel-caption">
+                        <h5>[Dance]</h5>
+                        <p></p>
+                        </div>
+                </a>
+                </div>
+                </div>
+                </div>
+                </div>
+  <!-- data-bs-target指的是目標id，沒有指定的話沒有辦法點 -->
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleSlidesOnly"
+  data-bs-slide="prev">
+  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+  <span class="visually-hidden">Previous</span>
+</button>
+<button class="carousel-control-next" type="button" data-bs-target="#carouselExampleSlidesOnly"
+  data-bs-slide="next">
+  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+  <span class="visually-hidden">Next</span>
+</button>
+            </div>
+            </div>
+        </div>
+
+        </div>
+
+        </div>
+    </div>
+</div>
+
+
+<!-- 網頁底部 -->
+ <div class="container-fluid footer">
+    <br>
+    <p>地址&nbsp;|&nbsp;台中市&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+       聯絡資訊&nbsp;|&nbsp;0987-601-062&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+       E-mail&nbsp;|&nbsp;ason91111013@gmail.com
+    </p>
+ </div>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+    crossorigin="anonymous">
+    </script>
+</body>
+
+</html>
